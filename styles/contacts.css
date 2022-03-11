@@ -73,3 +73,42 @@
         display: block;
     }
 }
+
+@media (max-height: 500px) {
+    #contacts {
+        height: 70%;
+        display: flex;
+    }
+    
+    #githubStat {
+        margin: 25vh 2vw 0vh 5vw;
+        width: 45vw;
+    }
+    
+    .card-box {
+        display: flex;
+        margin: auto;
+        height: 50%;
+        width: 80%;
+    }
+    
+    .card-box:hover {
+        box-shadow: 0px 0px 70px 0px white;
+    }
+    
+    .row {
+        cursor: pointer;
+        display: flex;
+    }
+    
+    .row img {
+        width: 45px;
+        height: 45px;
+        margin: 1.5vw;
+    }
+    
+    .row p {
+        font-size: 1.5rem;
+        margin-top: 2.1vw;
+    }
+}

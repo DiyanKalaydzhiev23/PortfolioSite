@@ -32,6 +32,16 @@
     }
 }
 
+@media (max-height: 500px) {
+    #certificates {
+        height: 151vh;
+    }
+
+    #certificate {
+        height: 141vh;
+    }
+}
+
 @keyframes fadein {
     from {
         opacity:0;
