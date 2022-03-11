@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scrollFunc.js"></script>
+    <script src="js/switchCertificates.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/backpack.css'>
+    <title>Dian Kalaydzhiev</title>
+</head>
+<body onload="manageSections(); manageCertificates();">
+
+    <section id="home">
+        <div id="app"></div>
+    </section>
+
+    <section id="certificates">
+        <img class="fadeInRight" id="certificate" src="images/python_basics_certificate.jfif" alt="Certificate image">
+        <img class="fadeInRight" id="certificate" src="images/python_fundamentals_certificate.jfif" alt="Certificate image">
+        <img class="fadeInRight" id="certificate" src="images/python_advanced_certificate.jfif" alt="Certificate image">
+    </section>
+
+    <section id="contacts">
+        <div class="card-box">
+            <div>
+                <div class="row">
+                    <img src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="Email icon"/>
+                    <div>
+                        <p class="name">diankostedenov@gmail.com</p>
+                    </div>
+                </div>
+                <div onclick="window.open('https://github.com/DiyanKalaydzhiev23','mywindow');" class="row">
+                    <img src="images/GitHub-Mark-64px.png" alt="GitHub icon"/>
+                    <div>
+                        <p class="name">DiyanKalaydzhiev23</p>
+                    </div>
+                </div>
+                <div onclick="window.open('https://www.instagram.com/d_kalaydzhiev/','mywindow');" class="row">
+                    <img src="images/instagram.png" alt="Instagram icon"/>
+                    <div>
+                        <p class="name">d_kalaydzhiev</p>
+                    </div>
+                </div>
+                <div onclick="window.open('https://www.facebook.com/dian.kalaidzyhiev/','mywindow');" class="row">
+                    <img src="images/facebook.png" alt="Facebook icon"/>
+                    <div>
+                        <p class="name">Dian Kalaydzhiev</p>
+                    </div>
+                </div>
+            </div>
+            
+            <img id="githubStat" alt="Diyan GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=DiyanKalaydzhiev23&show_icons=true&hide_border=false&title_color=ff652f&icon_color=FFE400&bg_color=09131B&text_color=ffffff&border_color=0c1a25" />
+        </div>
+    </section>
+
+    <header>
+        <nav style="position: fixed;">
+            <ul>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+    
+            <div class="dropdown">
+                <span>Menu</span>
+                <div class="dropdown-content">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <footer>
+        <div>
+            &copy;Dian Kalaydzhiev. All rights reserved.
+        </div>
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.9.0/umd/react.production.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.9.0/umd/react-dom.production.min.js'></script>
+    <script  src="./script.js"></script>
+</body>
+</html>

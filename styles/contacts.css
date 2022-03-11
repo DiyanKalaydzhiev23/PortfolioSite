@@ -1,0 +1,75 @@
+#contacts {
+    height: 101vh;
+    background-color: #92D9E8;
+    display: flex;
+    justify-content: center;
+}
+
+#githubStat {
+    margin: 0vh 2vw 0vh 5vw;
+    width: 45vw;
+}
+
+.card-box {
+    box-shadow: 0px 0px 30px 0px white;
+    display: flex;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 50%;
+    width: 80%;
+    color: white;
+}
+
+.card-box:hover {
+    box-shadow: 0px 0px 70px 0px white;
+}
+
+.row {
+    cursor: pointer;
+    display: flex;
+}
+
+.row img {
+    width: 45px;
+    height: 45px;
+    margin: 1.5vw;
+}
+
+.row p {
+    font-size: 1.5rem;
+    margin-top: 2.1vw;
+}
+
+@media (max-width: 920px) {
+    #githubStat {
+        margin: auto;
+        width: 90%;
+        height: 40%;
+    }
+
+    .row p {
+        font-size: 1rem;
+        margin-top: 5vw;
+    }
+
+    .row img {
+        margin: 2vw;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .card-box {
+        height: 70%;
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-box {
+        height: 55%;
+        display: block;
+    }
+}
