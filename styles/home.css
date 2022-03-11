@@ -101,7 +101,7 @@ nav a:hover {
     display: none;
     position: absolute;
     background-color: #0B0C10;
-    min-width: 220px;
+    min-width: 240px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
   
