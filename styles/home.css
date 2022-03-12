@@ -134,7 +134,7 @@ nav a:hover {
     }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 720px) {
     #myImage {
         width: 20vw;
         height: 20vw;
