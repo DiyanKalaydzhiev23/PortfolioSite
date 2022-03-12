@@ -109,7 +109,7 @@ nav a:hover {
     display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     nav span {display: inline-block;}
     nav ul { display: none; }
     
@@ -131,5 +131,25 @@ nav a:hover {
     .container {
         margin: 30vh 0px 0px 5vw;
         text-align: center;
+    }
+}
+
+@media (max-height: 800px) {
+    #myImage {
+        width: 20vw;
+        height: 20vw;
+        margin: 5vh 6vw 0vh 17vw;
+    }
+}
+
+@media (max-height: 375px) {
+    #myImage {
+        width: 10vw;
+        height: 10vw;
+        margin: 15vh 6vw 0vh 0vw;
+    }
+
+    .container {
+        margin-left: -12vw;
     }
 }
