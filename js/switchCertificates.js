@@ -8,7 +8,7 @@ function manageCertificates() {
         'images/python_basics_certificate.jfif',
         'images/python_fundamentals_certificate.jfif',
         'images/python_advanced_certificate.jfif',
-        'images/python_web_framework_certificate.jpg',
+        'images/python_web_framework_certificate.png',
     ];
 
     function switchCertificates() {
