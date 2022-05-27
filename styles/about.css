@@ -18,6 +18,24 @@
     text-align: center;
 }
 
+#download-cv-button {
+    position: absolute;
+    top: 175vh;
+    left: 25vw;
+    height: 40.9px;
+    width: 195px;
+    min-width: 195px;
+    background: #a13f58;
+    color: white;
+    border-radius: 5px;
+    padding: 0.4rem 0.5rem;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 @media (max-width: 1000px) {
     #about {
         display: block;
@@ -33,7 +51,12 @@
         position: absolute;
         width: 80%;
         height: 80%;
-        margin: 22vh 0vw 1vh 9vw;
+        margin: 26vh 0vw 5vh 9vw;
+    }
+
+    #download-cv-button {
+        top: 135vh;
+        left: 33vw;
     }
 }
 
@@ -43,10 +66,14 @@
     }
 
     #about img {
-        position: absolute;
-        width: 80%;
-        height: 80%;
-        margin: 25vh 0vw 1vh 9vw;
+        width: 70%;
+        height: 70%;
+        margin: 35vh 0vw 1vh 15vw;
+    }
+
+    #download-cv-button {
+        top: 140vh;
+        left: 32vw;
     }
 }
 
@@ -55,11 +82,28 @@
         font-size: 1.1rem;
     }
 
+    #download-cv-button {
+        top: 147vh;
+        left: 27vw;
+    }
+
     #about img {
-        position: absolute;
-        width: 80%;
-        height: 80%;
-        margin: 32vh 0vw 1vh 9vw;
+        width: 70%;
+        height: 50%;
+        margin: 45vh 0vw 1vh 15vw;
+    }
+}
+
+@media (max-width: 300px) {
+    #download-cv-button {
+        top: 157vh;
+        left: 17vw;
+    }
+
+    #about img {
+        width: 70%;
+        height: 50%;
+        margin: 55vh 0vw 1vh 15vw;
     }
 }
 
