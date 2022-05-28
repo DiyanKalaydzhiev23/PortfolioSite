@@ -102,17 +102,17 @@
     }
 }
 
-@media (max-height: 650px) {
+@media (max-height: 700px) {
     #about div {
         font-size: 0.9rem;
     }
     
-    @media (max-width: 500) {
+    @media (max-width: 500px) {
         #about img {
             position: absolute;
             width: 60%;
-            height: 60%;
-            margin: 53vh 0vw 1vh 20vw;
+            height: 55%;
+            margin: 50vh 0vw 1vh 20vw;
         }
     }
 }
