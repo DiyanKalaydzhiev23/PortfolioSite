@@ -11,17 +11,19 @@
 }
 
 #about div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto 5vw;
     font-weight: 600;
-    line-height: 5vh;
     font-size: 1.5rem;
     text-align: center;
 }
 
+
 #download-cv-button {
-    position: absolute;
-    top: 175vh;
-    left: 25vw;
+    display: block;
+    margin: 15vh 0 0 0;
     height: 40.9px;
     width: 195px;
     min-width: 195px;
@@ -55,8 +57,7 @@
     }
 
     #download-cv-button {
-        top: 135vh;
-        left: 33vw;
+        margin-top: 10vh;
     }
 }
 
@@ -72,19 +73,13 @@
     }
 
     #download-cv-button {
-        top: 140vh;
-        left: 32vw;
+        margin-top: 5vh;
     }
 }
 
 @media (max-width: 380px) {
     #about div {
         font-size: 1.1rem;
-    }
-
-    #download-cv-button {
-        top: 147vh;
-        left: 27vw;
     }
 
     #about img {
