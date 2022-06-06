@@ -53,7 +53,7 @@
         position: absolute;
         width: 80%;
         height: 80%;
-        margin: 26vh 0vw 5vh 9vw;
+        margin: 30vh 0vw 5vh 9vw;
     }
 
     #download-cv-button {
@@ -68,8 +68,8 @@
 
     #about img {
         width: 70%;
-        height: 70%;
-        margin: 35vh 0vw 1vh 15vw;
+        height: 50%;
+        margin: 40vh 0vw 1vh 15vw;
     }
 
     #download-cv-button {
@@ -77,15 +77,15 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
     #about div {
         font-size: 1.1rem;
     }
 
     #about img {
         width: 70%;
-        height: 50%;
-        margin: 45vh 0vw 1vh 15vw;
+        height: 40%;
+        margin: 50vh 0vw 1vh 15vw;
     }
 }
 
@@ -97,7 +97,7 @@
 
     #about img {
         width: 70%;
-        height: 50%;
+        height: 40%;
         margin: 55vh 0vw 1vh 15vw;
     }
 }
@@ -112,7 +112,7 @@
             position: absolute;
             width: 60%;
             height: 55%;
-            margin: 50vh 0vw 1vh 20vw;
+            margin: 55vh 0vw 1vh 20vw;
         }
     }
 }
