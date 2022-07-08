@@ -16,7 +16,7 @@
     justify-content: center;
     margin: auto 5vw;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 
@@ -52,8 +52,8 @@
     #about img {
         position: absolute;
         width: 80%;
-        height: 80%;
-        margin: 30vh 0vw 5vh 9vw;
+        height: 70%;
+        margin: 35vh 0vw 5vh 9vw;
     }
 
     #download-cv-button {
@@ -61,15 +61,23 @@
     }
 }
 
+@media (max-width: 750px) {
+    #about img {
+        width: 70%;
+        height: 50%;
+        margin: 53vh 0vw 5vh 14vw;
+    }
+}
+
 @media (max-width: 550px) {
     #about div {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     #about img {
         width: 70%;
-        height: 50%;
-        margin: 40vh 0vw 1vh 15vw;
+        height: 40%;
+        margin: 50vh 0vw 1vh 15vw;
     }
 
     #download-cv-button {
@@ -79,7 +87,7 @@
 
 @media (max-width: 450px) {
     #about div {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     #about img {
@@ -104,7 +112,7 @@
 
 @media (max-height: 700px) {
     #about div {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     
     @media (max-width: 500px) {
