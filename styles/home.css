@@ -1,8 +1,21 @@
 #myImage {
+    position: absolute;
     height: 20vw;
     width: 20vw;
+    left: 20vw;
     margin: 0vh 6vw 0vh 6vw;
     border-radius: 50%;
+}
+
+h1 {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+}
+
+h2 {
+    position: absolute;
+    left: 50vw;
 }
 
 #app {
@@ -109,12 +122,51 @@ nav a:hover {
     display: block;
 }
 
+@media (max-width: 1200px) {
+    #myImage {
+        left: 10vw;
+    }
+
+    h2 {
+        top: 50vh;
+        width: 250px;
+    }
+}
+
+@media (max-width: 950px) {
+    #myImage {
+        left: 10vw;
+    }
+
+    h1 {
+        top: 43vh;
+        left: 40vw;
+    }
+
+    h2 {
+        top: 49vh;
+        left: 40vw;
+        width: 250px;
+    }
+}
+
 @media (max-width: 750px) {
     nav span {display: inline-block;}
     nav ul { display: none; }
     
     .dropdown { display: inline-block; }
     nav a:hover { color: none; }
+
+    h1 {
+        top: 40vh;
+        left: 38vw;
+    }
+
+    h2 {
+        top: 50vh;
+        left: 25vw;
+        width: 200px;
+    }
 
     #home {
         display: block;
@@ -151,5 +203,24 @@ nav a:hover {
 
     .container {
         margin-left: -12vw;
+    }
+}
+
+@media (max-width: 300px) {
+    #myImage {
+        left: 15vw;
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        top: 40vh;
+        left: 34vw;
+    }
+
+    h2 {
+        top: 50vh;
+        left: 23vw;
+        width: 150px;
     }
 }

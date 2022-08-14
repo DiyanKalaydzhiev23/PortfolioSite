@@ -146,8 +146,14 @@ class App extends React.Component {
       React.createElement("img", { id:"myImage", src:"images/MyImage.jpg" }),
       React.createElement("section", { className: "container" }, /*#__PURE__*/
       React.createElement("h1", null, "Hi!"), /*#__PURE__*/
-      React.createElement("h2", null, "My name is Dian."), /*#__PURE__*/
-      React.createElement("p", null, "I am Python Full Stack Developer."), /*#__PURE__*/
+      React.createElement("h2", null,
+        React.createElement("p", { className: "typewrite",  dataPeriod: "2000", dataType: JSON.stringify([
+          'My name is Dian.',
+          'I am Python/JS Full Stack Developer.',
+          'Lecturer at Softuni.',
+          'Content Developer at Softuni.'
+        ])},
+        React.createElement("span", { className: "wrap" }))),
 
       React.createElement("button", {
         className: "trap-button",
@@ -162,10 +168,6 @@ class App extends React.Component {
         onCursorGrabbed: this.handleCursorGrabbed,
         cursorGrabbed: cursorGrabbed,
         gameOver: gameOver })))));
-
-
-
-
   }}
 
 
@@ -257,11 +259,6 @@ const Grabber = ({ state, gameOver, extended, onCursorGrabbed }) => {
       className: "grabber__hand",
       src: handImageSrc,
       onMouseEnter: onCursorGrabbed })))));
-
-
-
-
-
 };
 
 // Render app
