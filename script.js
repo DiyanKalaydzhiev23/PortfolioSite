@@ -150,8 +150,8 @@ class App extends React.Component {
         React.createElement("p", { className: "typewrite",  dataPeriod: "2000", dataType: JSON.stringify([
           'My name is Dian.',
           'I am Python/JS Full Stack Developer.',
-          'Lecturer at Softuni.',
-          'Content Developer at Softuni.'
+          'I am lecturer at Softuni.',
+          'I am Content Developer at Softuni.'
         ])},
         React.createElement("span", { className: "wrap" }))),
 
