@@ -227,6 +227,7 @@
 .nav ul li a {
     font-family: 'Montserrat', sans-serif;
     font-size: 9vh;
+    margin-bottom: 50px;
     text-transform: uppercase;
     line-height: 1.2;
     font-weight: 800;
