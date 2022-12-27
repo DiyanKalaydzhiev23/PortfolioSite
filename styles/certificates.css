@@ -1,6 +1,6 @@
 #certificates {
     display: flex;
-    height: 93vh;
+    height: 100vh;
     background-color: #2F4858;
 }
 
@@ -26,6 +26,7 @@
 .splide__slide img {
     height: 88vh;
     width: 90%;
+    margin-top: 30px;
     margin-left: 6%;
     padding: 35px 0 20px 0;
 }

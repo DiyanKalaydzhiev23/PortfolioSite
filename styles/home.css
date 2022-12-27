@@ -29,7 +29,7 @@ h2 {
 }
 
 .active a {
-    color: #33D2FF;
+    color: #33D2FF !important;
 }
 
 .container {
@@ -40,7 +40,7 @@ li {
     list-style-type: none;
 }
 
-nav {
+#desktopNav {
     position: absolute;
     width: 100%;
     height: 75px;
@@ -51,6 +51,7 @@ nav {
     color: #c5c6c7;
     font-weight: bold;
     font-size: 1.5rem;
+    z-index: 100;
 }
 
 nav,
@@ -65,11 +66,19 @@ footer {
     color: white;
 }
 
-nav ul {
+header {
+    height: 0px;
+}
+
+#mobileNav {
+    display: none;
+}
+
+#desktopNav ul {
     margin: auto;
 }
 
-nav ul li {
+#desktopNav ul li {
     display: inline;
     margin: 0 2px;
 }
@@ -78,7 +87,7 @@ li::before {
     display: inline;
 }
 
-nav a {
+#desktopNav a {
     border-bottom: none;
     text-decoration: none;
     border-radius: 50%;
@@ -99,27 +108,10 @@ footer {
     font-weight: bold;
 }
 
-nav a:hover {
+#desktopNav a:hover {
     cursor: pointer;
     color: #33D2FF;
     font-weight: bolder;
-}
-
-.dropdown {
-    position: relative;
-    display: none;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #0B0C10;
-    min-width: 240px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 @media (max-width: 1200px) {
@@ -152,7 +144,8 @@ nav a:hover {
 
 @media (max-width: 750px) {
     nav span {display: inline-block;}
-    nav ul { display: none; }
+    #desktopNav { display: none; }
+    #mobileNav { display: inline-block; }
     
     .dropdown { display: inline-block; }
     nav a:hover { color: none; }

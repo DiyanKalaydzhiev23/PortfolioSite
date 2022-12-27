@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+#contactsInfo {
+    margin-left: 10px;
+}
+
 #githubStat {
     margin: 0vh 2vw 0vh 5vw;
     width: 45vw;
@@ -39,6 +43,20 @@
 .row p {
     font-size: 1.4rem;
     margin-top: 2.1vw;
+}
+
+@media (max-width: 1500px) {
+    #githubStat {
+        width: 40vw;
+        margin: 20% 6% 50% 18%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #githubStat {
+        width: 33vw;
+        margin: 30% 6% 50% 18%;
+    }
 }
 
 @media (max-width: 920px) {

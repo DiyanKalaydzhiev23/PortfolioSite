@@ -17,6 +17,7 @@
         src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script
         src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="icon" href="./images/laptop.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
@@ -40,11 +41,13 @@
                 <p>Excellent knowledge of English</p>
                 <p>Familiar with: Python, Django, JavaScript, React, Mocha, PostgreSQL, HTML, CSS and more</p>
             </span>
+
             <span>
                 <a id="download-cv-button" href="./docs/Diyan_Kalaydzhiev_Resume.pdf"
                     download="Diyan_Kalaydzhiev_Resume">Download CV</a>
             </span>
         </div>
+
         <img src="images/computerMan.svg" alt="Computer man image">
     </section>
 
@@ -86,57 +89,70 @@
 
     <section id="contacts">
         <div class="card-box">
-            <div>
+            <div id="contactsInfo">
                 <div class="row">
                     <img src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="Email icon" />
+                    
                     <div>
                         <p class="name">diankostedenov@gmail.com</p>
                     </div>
                 </div>
+
                 <div onclick="window.open('https://github.com/DiyanKalaydzhiev23','mywindow');" class="row">
                     <img src="images/GitHub-Mark-64px.png" alt="GitHub icon" />
+                    
                     <div>
                         <p class="name">DiyanKalaydzhiev23</p>
                     </div>
                 </div>
+
                 <div onclick="window.open('https://www.instagram.com/d_kalaydzhiev/','mywindow');" class="row">
                     <img src="images/instagram.png" alt="Instagram icon" />
+                    
                     <div>
                         <p class="name">d_kalaydzhiev</p>
                     </div>
                 </div>
+
                 <div onclick="window.open('https://www.facebook.com/dian.kalaidzyhiev/','mywindow');" class="row">
                     <img src="images/facebook.png" alt="Facebook icon" />
+                    
                     <div>
                         <p class="name">Dian Kalaydzhiev</p>
                     </div>
                 </div>
             </div>
 
-            <img id="githubStat" alt="Diyan GitHub Stats"
+            <div>
+                <img id="githubStat" alt="Diyan GitHub Stats"
                 src="https://camo.githubusercontent.com/5b0c20de1f1125874326949cb05ae906079c0786dbe3a1d5dc16d602befcd342/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d446979616e4b616c6179647a6869657632332673686f775f69636f6e733d7472756526686964655f626f726465723d66616c7365267469746c655f636f6c6f723d6666363532662669636f6e5f636f6c6f723d4646453430302662675f636f6c6f723d30393133314226746578745f636f6c6f723d66666666666626626f726465725f636f6c6f723d306331613235" />
+            </div>
         </div>
     </section>
 
     <header>
-        <nav style="position: fixed;">
+        <nav id="desktopNav" style="position: fixed;">
             <ul>
                 <li class="active"><a href="#home">Home</a></li>
                 <li class="active"><a href="#about">About</a></li>
                 <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
+        </nav>
 
-            <div class="dropdown">
-                <span>Menu</span>
-                <div class="dropdown-content">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li class="active"><a href="#about">About</a></li>
+        <div id="mobileNav" onClick="setCurrentScrollPos()">
+            <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+            <label id="closeBtn" for="menu-icon"></label>
+            
+            <nav class="nav" onClick="closeMenu()">
+                <ul class="pt-5">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contacts">Contacts</a></li>
-                </div>
-            </div>
-        </nav>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
@@ -150,6 +166,16 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.9.0/umd/react-dom.production.min.js'></script>
     <script src="./script.js"></script>
     <script>function startDownload(url) { window.location.href = url; }
+    </script>
+
+    <script>
+        function setCurrentScrollPos() {
+            window.scroll(0, window.scrollY);
+        }
+
+        function closeMenu() {
+            document.getElementById("closeBtn").click();
+        }
     </script>
 
     <script>

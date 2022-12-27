@@ -45,14 +45,14 @@
 
     #about div {
         position: absolute;
-        margin-top: 4vh;
+        margin-top: 90x;
         line-height: 30px;
     }
 
     #about img {
         position: absolute;
         width: 80%;
-        height: 70%;
+        height: 60%;
         margin: 35vh 0vw 5vh 9vw;
     }
 
@@ -120,7 +120,7 @@
             position: absolute;
             width: 60%;
             height: 55%;
-            margin: 55vh 0vw 1vh 20vw;
+            margin: 45vh 0vw 1vh 20vw;
         }
     }
 }
