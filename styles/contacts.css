@@ -48,14 +48,12 @@
 @media (max-width: 1500px) {
     #githubStat {
         width: 40vw;
-        margin: 20% 6% 50% 18%;
     }
 }
 
 @media (max-width: 1200px) {
     #githubStat {
         width: 33vw;
-        margin: 30% 6% 50% 18%;
     }
 }
 
