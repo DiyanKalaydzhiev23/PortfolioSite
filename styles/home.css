@@ -1,9 +1,7 @@
 #myImage {
-    position: absolute;
     height: 20vw;
     width: 20vw;
-    left: 20vw;
-    margin: 0vh 6vw 0vh 6vw;
+    margin: 0vh 6vw 0vh 25vw !important;
     border-radius: 50%;
 }
 
@@ -116,7 +114,9 @@ footer {
 
 @media (max-width: 1200px) {
     #myImage {
+        position: absolute;
         left: 10vw;
+        margin: 0vh 6vw 0vh 6vw !important;
     }
 
     h2 {
@@ -176,14 +176,6 @@ footer {
     .container {
         margin: 30vh 0px 0px 5vw;
         text-align: center;
-    }
-}
-
-@media (max-height: 720px) {
-    #myImage {
-        width: 20vw;
-        height: 20vw;
-        margin: 5vh 6vw 0vh 17vw;
     }
 }
 
