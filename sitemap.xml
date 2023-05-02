@@ -8,8 +8,14 @@
 
 
 <url>
-  <loc>http://diankalaydzhiev.ml/</loc>
-  <lastmod>2022-03-23T20:19:16+00:00</lastmod>
+  <loc>https://diankalaydzhiev.com/</loc>
+  <lastmod>2023-05-02T19:34:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://diankalaydzhiev.com/docs/Diyan_Kalaydzhiev_Resume.pdf</loc>
+  <lastmod>2023-05-02T19:34:08+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
