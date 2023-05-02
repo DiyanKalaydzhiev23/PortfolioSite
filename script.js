@@ -28,7 +28,6 @@ Object.keys(ASSETS).forEach(key => {
  * Shared hooks
  */
 
-// Hover state - https://dev.to/spaciecat/hover-states-with-react-hooks-4023
 const useHover = () => {
   const ref = useRef();
   const [hovered, setHovered] = useState(false);
