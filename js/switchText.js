@@ -7,7 +7,7 @@ let TxtType = function(el, toRotate, period) {
     this.tick();
     this.isDeleting = false;
 };
-
+ 
 TxtType.prototype.tick = function() {
     let i = this.loopNum % this.toRotate.length;
     let fullTxt = this.toRotate[i];
