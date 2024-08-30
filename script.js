@@ -159,7 +159,7 @@ class App extends React.Component {
         onClick: this.handleButtonClicked },
       gameOver && "DiyanKalaydzhiev23",
       cursorGrabbed && "Let's get to know each other better first.",
-      !gameOver && !cursorGrabbed && "GitHub"), /*#__PURE__*/
+      !gameOver && !cursorGrabbed && "Linkedin"), /*#__PURE__*/
 
 
       React.createElement("div", { className: "grab-zone-wrapper" }, /*#__PURE__*/

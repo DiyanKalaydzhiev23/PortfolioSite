@@ -84,6 +84,14 @@
 }
 
 @media (max-width: 500px) {
+    #contactsInfo {
+        margin-left: 20px;
+    }
+
+    #contactsInfo * {
+        font-size: 0.8rem;
+    }
+
     .card-box {
         height: 55%;
         display: block;
