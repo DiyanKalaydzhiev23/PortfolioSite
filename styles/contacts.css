@@ -1,12 +1,18 @@
 #contacts {
-    height: 101vh;
+    display: flex;
+    height: 100vh;
     background-color: #92D9E8;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#contactsInfo {
+.contactsInfo {
+    display: flex;
     margin-left: 10px;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #githubStat {
@@ -35,9 +41,11 @@
 }
 
 .row img {
-    width: 45px;
-    height: 45px;
-    margin: 1.5vw;
+    width: 120px;
+    height: 120px;
+    margin-left: 1.7vw;
+    margin-right: 1.7vw;
+    margin-bottom: 1vw;
 }
 
 .row p {
