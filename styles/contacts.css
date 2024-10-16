@@ -24,9 +24,11 @@
 }
 
 .row img {
-    width: 120px;
+    width: 110px;
     height: auto; 
     margin: 1vw 0; 
+    border-radius: 31px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -53,6 +55,7 @@
 
     .row img {
         width: 90px;
+        border-radius: 25px;
     }
 }
 
@@ -66,5 +69,6 @@
 
     .row img {
         width: 80px; 
+        border-radius: 25px;
     }
 }
