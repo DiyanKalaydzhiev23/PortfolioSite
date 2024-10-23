@@ -262,3 +262,30 @@ const Grabber = ({ state, gameOver, extended, onCursorGrabbed }) => {
 
 // Render app
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("app"));
+
+
+function CopyEmail() {
+  var email = "diankostadenov@gmail.com";
+
+  navigator.clipboard.writeText(email).then(function() {
+      showNotification("Copied to clipboard: " + email);
+  }).catch(function(error) {
+      console.error("Error copying text: ", error);
+  });
+}
+
+function showNotification(message) {
+  var notification = document.getElementById("notification");
+  notification.textContent = message;
+  notification.style.display = "block";
+  setTimeout(function() {
+      notification.classList.add("show");
+  }, 10);
+
+  setTimeout(function() {
+      notification.classList.remove("show");
+      setTimeout(function() {
+          notification.style.display = "none";
+      }, 1000);
+  }, 2500);
+}

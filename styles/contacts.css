@@ -4,7 +4,7 @@
     align-items: center;
     background-color: #92D9E8;
     padding: 40px;
-    height: 85vh;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -70,5 +70,38 @@
     .row img {
         width: 80px; 
         border-radius: 25px;
+    }
+}
+
+
+.notification {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #191e21ef;
+    color: white;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.notification.show {
+    display: block;
+    opacity: 1;
+    bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .notification {
+        width: 80%;
+        padding: 10px;
+        font-size: 1.9vh;
     }
 }
