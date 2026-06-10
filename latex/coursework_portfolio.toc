@@ -1,0 +1,27 @@
+\xpg@aux {}{bulgarian}
+\contentsline {section}{\numberline {1}Въведение}{2}{section.1}%
+\contentsline {section}{\numberline {2}Архитектура на проекта и карта на сайта}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Файлова организация}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Визуална концепция и дизайнерски решения}{3}{section.3}%
+\contentsline {section}{\numberline {4}Начална секция Home}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}HTML реализация}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}CSS оформление}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}React логика}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}JavaScript поведение}{6}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Секция About}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}HTML структура}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}CSS и адаптивност}{8}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Секция Certificates}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}HTML структура}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}JavaScript конфигурация}{9}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}CSS оформление}{9}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Секция Contacts}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}HTML структура}{10}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}CSS оформление}{10}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}JavaScript интеракция}{11}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Навигация, скрол логика и мобилно меню}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}HTML структура}{12}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}JavaScript при скрол}{12}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}CSS анимация на мобилното меню}{12}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Адаптивност, достъпност и инженерни изводи}{12}{section.9}%
+\contentsline {section}{\numberline {10}Заключение}{13}{section.10}%
