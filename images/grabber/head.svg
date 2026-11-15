@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 168" width="75" height="84">
+  <!-- Static base of the head. Eyes, brows and mouth are drawn live by script.js (they follow the cursor and change expression). -->
+  <defs>
+    <clipPath id="face"><path d="M40 60 C40 38 55 22 75 22 C95 22 110 38 110 60 C110 76 108.5 88 105 98 C101.5 107.5 96 114 89 118.5 C84.5 121.6 80 123.4 75 123.4 C70 123.4 65.5 121.6 61 118.5 C54 114 48.5 107.5 45 98 C41.5 88 40 76 40 60 Z"/></clipPath>
+    <clipPath id="neck"><path d="M53 100 L51 168 L99 168 L97 100 Z"/></clipPath>
+    <filter id="b3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="b2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.8"/></filter>
+    <filter id="b1" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation=".9"/></filter>
+    <filter id="b05" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation=".45"/></filter>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17120F"/>
+      <stop offset=".7" stop-color="#17120F" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#17120F" stop-opacity=".25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- neck -->
+  <path d="M53 104 L51 168 L99 168 L97 104 Z" fill="#DDA98B"/>
+  <g clip-path="url(#neck)">
+    <path d="M45 104 C58 128 92 128 105 104 L105 126 C92 140 58 140 45 126 Z" fill="#A86F52" opacity=".55" filter="url(#b3)"/>
+    <path d="M90 125 C88 140 86 152 84 168 L101 168 L99 125 Z" fill="#C48B6F" opacity=".5" filter="url(#b3)"/>
+    <path d="M59 134 C62 144 65 152 68 160" fill="none" stroke="#C48B6F" stroke-width="2" opacity=".45" filter="url(#b1)"/>
+    <path d="M91 134 C88 144 85 152 82 160" fill="none" stroke="#B07757" stroke-width="2" opacity=".45" filter="url(#b1)"/>
+    <ellipse cx="75" cy="141" rx="3" ry="2" fill="#C48B6F" opacity=".5" filter="url(#b1)"/>
+  </g>
+
+  <!-- t-shirt -->
+  <path d="M-2 168 L-2 163 C15 156.5 33 148 48 142.5 Q75 158 102 142.5 C117 148 135 156.5 152 163 L152 168 Z" fill="#1F3A37"/>
+  <path d="M48 142.5 Q75 159 102 142.5" fill="none" stroke="#2B4C48" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M52 150 Q75 164 98 150" fill="none" stroke="#162C29" stroke-width="2" opacity=".6"/>
+
+  <!-- ears -->
+  <g fill="#E3B193" stroke="#A86F52" stroke-width="1.4">
+    <path d="M41 62 C35 57.5 29.5 60.5 30 68.5 C30.5 76.5 33.5 84.5 40 86.5 Z"/>
+    <path d="M109 62 C115 57.5 120.5 60.5 120 68.5 C119.5 76.5 116.5 84.5 110 86.5 Z"/>
+  </g>
+  <path d="M38.5 66 C34.5 64 33 67 34 72 C35 77 36.5 80 39 81" fill="none" stroke="#A86F52" stroke-width="1.4" opacity=".6" filter="url(#b05)"/>
+  <path d="M111.5 66 C115.5 64 117 67 116 72 C115 77 113.5 80 111 81" fill="none" stroke="#A86F52" stroke-width="1.4" opacity=".6" filter="url(#b05)"/>
+
+  <!-- face -->
+  <path d="M40 60 C40 38 55 22 75 22 C95 22 110 38 110 60 C110 76 108.5 88 105 98 C101.5 107.5 96 114 89 118.5 C84.5 121.6 80 123.4 75 123.4 C70 123.4 65.5 121.6 61 118.5 C54 114 48.5 107.5 45 98 C41.5 88 40 76 40 60 Z"
+        fill="#E9B99B"/>
+
+  <!-- soft painted shading, kept inside the face (light from the upper left) -->
+  <g clip-path="url(#face)">
+    <path d="M113 50 C111 72 109.5 88 104 100 C100 109 95 115 88 120 L116 130 Z" fill="#C88F71" opacity=".85" filter="url(#b3)"/>
+    <ellipse cx="57" cy="80" rx="9" ry="7" fill="#F5D3BC" opacity=".7" filter="url(#b3)"/>
+    <ellipse cx="68" cy="44" rx="16" ry="6" fill="#F5D3BC" opacity=".55" filter="url(#b3)"/>
+    <path d="M46 88 C50 95 55 99 61 100.5" fill="none" stroke="#C88F71" stroke-width="5" opacity=".35" filter="url(#b3)"/>
+    <path d="M104 88 C100 95 95 99 89 100.5" fill="none" stroke="#B9805F" stroke-width="6" opacity=".45" filter="url(#b3)"/>
+    <ellipse cx="62" cy="61" rx="6" ry="3" fill="#B9805F" opacity=".4" filter="url(#b2)"/>
+    <ellipse cx="88" cy="61" rx="6" ry="3" fill="#B9805F" opacity=".45" filter="url(#b2)"/>
+    <path d="M44 45 C60 39 90 38 108 45 L108 51 C90 45 60 46 44 51 Z" fill="#8A5A43" opacity=".35" filter="url(#b2)"/>
+    <!-- nose shadow (right side of the bridge + under the tip) -->
+    <path d="M79.5 64 C80.5 72 82.5 79 85.5 85 C83.5 87 80.5 88 78.5 87.5 C79.2 80 79.2 72 78.6 64 Z" fill="#B9805F" opacity=".55" filter="url(#b1)"/>
+    <ellipse cx="75" cy="91.5" rx="7.5" ry="2.2" fill="#A86F52" opacity=".45" filter="url(#b1)"/>
+    <!-- light stubble along the jaw and chin -->
+    <path d="M45 97 C49 107 56 114 64 119 C70 122.5 80 122.5 86 119 C94 114 101 107 105 97 L112 128 L38 128 Z" fill="#4A372D" opacity=".2" filter="url(#b2)"/>
+    <ellipse cx="75" cy="114.5" rx="8" ry="5" fill="#4A372D" opacity=".12" filter="url(#b2)"/>
+    <!-- under the lower lip, and a touch of light on the chin -->
+    <ellipse cx="75" cy="108.4" rx="7" ry="1.6" fill="#A86F52" opacity=".45" filter="url(#b1)"/>
+    <ellipse cx="73" cy="116.5" rx="4.5" ry="2.2" fill="#F5D3BC" opacity=".45" filter="url(#b2)"/>
+  </g>
+
+  <!-- face outline -->
+  <path d="M40 60 C40 38 55 22 75 22 C95 22 110 38 110 60 C110 76 108.5 88 105 98 C101.5 107.5 96 114 89 118.5 C84.5 121.6 80 123.4 75 123.4 C70 123.4 65.5 121.6 61 118.5 C54 114 48.5 107.5 45 98 C41.5 88 40 76 40 60 Z"
+        fill="none" stroke="#A36A4E" stroke-width="1.3"/>
+
+  <!-- nose: tip, soft nostrils, one crease on the lit side -->
+  <ellipse cx="74.2" cy="84.3" rx="2.6" ry="1.9" fill="#F7DCC8" opacity=".75" filter="url(#b1)"/>
+  <path d="M67.5 87.6 C65.8 85 66.8 82.4 69.4 82.4" fill="none" stroke="#A86F52" stroke-width="1.1" stroke-linecap="round" opacity=".8"/>
+  <path d="M69.5 89.3 C72 90.6 78 90.6 80.5 89.3" fill="none" stroke="#A86F52" stroke-width="1.1" stroke-linecap="round" opacity=".7"/>
+  <ellipse cx="71.4" cy="88.6" rx="1.8" ry=".85" fill="#6E3F2F" opacity=".75" filter="url(#b05)"/>
+  <ellipse cx="78.6" cy="88.6" rx="1.8" ry=".85" fill="#6E3F2F" opacity=".75" filter="url(#b05)"/>
+
+  <g transform="translate(75 0) scale(.875 1) translate(-75 0)">
+  <!-- hair: short faded sides -->
+  <path d="M34.5 74 C32 65 32.5 57 36 49 L44 47 C41 55 39 63 38 74 Z" fill="url(#fade)" filter="url(#b05)"/>
+  <path d="M115.5 74 C118 65 117.5 57 114 49 L106 47 C109 55 111 63 112 74 Z" fill="url(#fade)" filter="url(#b05)"/>
+  <!-- hair: short on top, swept up and back -->
+  <path d="M38.5 56
+           C36 47 37 37 42 29
+           C46 22 53 16 62 13.5
+           C68 10.5 77 9.4 85 9.8
+           C96 10.4 107 13.5 114.5 19.5
+           C120 24 122.5 31 121.6 39.5
+           C121 46 118 51 112.5 56
+           C111 51 109 47.5 106 45.5
+           C101 43.5 96 41.5 90 41
+           C84 40.4 77 40.2 71 40.6
+           C63 41.2 55 42.5 49 44
+           C46.5 44.8 45 45.5 44 47
+           C42 50 40 53 38.5 56 Z"
+        fill="#16110E"/>
+  <path d="M52 33 C57 22.5 70 16 86 15 C99 14.5 109 18.5 115 25 C104 21.5 94 21 85 22.5 C72 24.5 61 28.5 52 33 Z" fill="#261E19"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M45 46 C48 36 57 26 77 18" stroke="#3D312A" stroke-width="1.8"/>
+    <path d="M52 44 C56 35 65 26 83 20" stroke="#2C231E" stroke-width="1.4"/>
+    <path d="M58 42 C62 34 72 26 92 21" stroke="#3D312A" stroke-width="1.6" opacity=".85"/>
+    <path d="M66 41 C71 33 81 27 101 23" stroke="#2C231E" stroke-width="1.3"/>
+    <path d="M74 40.5 C80 33.5 91 28 109 26" stroke="#3D312A" stroke-width="1.5" opacity=".7"/>
+    <path d="M84 40.5 C91 35.5 100 32 115 32" stroke="#2C231E" stroke-width="1.2"/>
+    <path d="M94 42 C100 38.5 108 36.5 118 37.5" stroke="#3D312A" stroke-width="1.2" opacity=".5"/>
+  </g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 120" width="150" height="120">
+  <!-- Torso in a t-shirt. The neckline sits at the top centre, under the neck/collar drawn in head.svg. -->
+  <defs>
+    <clipPath id="torso"><path d="M60 3 C52 5 40 10 29 16.5 C24 19.5 20.5 24 19.5 31 C18.5 40 19 60 19.5 124 L130.5 124 C131 60 131.5 40 130.5 31 C129.5 24 126 19.5 121 16.5 C110 10 98 5 90 3 Q75 12 60 3 Z"/></clipPath>
+    <filter id="s3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="s6" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <path d="M60 3 C52 5 40 10 29 16.5 C24 19.5 20.5 24 19.5 31 C18.5 40 19 60 19.5 124 L130.5 124 C131 60 131.5 40 130.5 31 C129.5 24 126 19.5 121 16.5 C110 10 98 5 90 3 Q75 12 60 3 Z" fill="#1F3A37"/>
+  <g clip-path="url(#torso)">
+    <!-- light on the upper left of the chest and shoulder, shadow on the right -->
+    <ellipse cx="48" cy="22" rx="26" ry="9" fill="#2E504B" opacity=".8" filter="url(#s6)"/>
+    <ellipse cx="58" cy="52" rx="22" ry="18" fill="#284844" opacity=".6" filter="url(#s6)"/>
+    <ellipse cx="128" cy="60" rx="14" ry="50" fill="#132724" opacity=".8" filter="url(#s6)"/>
+    <ellipse cx="22" cy="70" rx="8" ry="40" fill="#162D2A" opacity=".6" filter="url(#s6)"/>
+    <!-- shadow cast by the head and neck -->
+    <ellipse cx="78" cy="14" rx="20" ry="8" fill="#0F201E" opacity=".55" filter="url(#s3)"/>
+    <!-- shoulder seams and a few soft folds -->
+    <path d="M30 16 C27 24 25.5 34 26 44" fill="none" stroke="#162C29" stroke-width="1.4" opacity=".8"/>
+    <path d="M120 16 C123 24 124.5 34 124 44" fill="none" stroke="#162C29" stroke-width="1.4" opacity=".8"/>
+    <path d="M40 48 C52 56 62 60 74 62" fill="none" stroke="#162C29" stroke-width="2" opacity=".5" filter="url(#s3)"/>
+    <path d="M110 46 C100 56 92 62 84 66" fill="none" stroke="#162C29" stroke-width="2" opacity=".5" filter="url(#s3)"/>
+  </g>
+</svg>

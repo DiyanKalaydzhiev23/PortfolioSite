@@ -141,10 +141,10 @@ a {
 }
 .grabber__arm {
   position: relative;
-  width: 24px;
+  width: 34px;
   height: 200px;
-  background: #7D9A9E;
-  border-radius: 20px;
+  margin-left: -5px;
+  background: url("../images/grabber/arm.svg") center / 100% 100% no-repeat;
   overflow: visible;
   transform: translateY(100%);
   transition: transform 0.2s ease;
@@ -153,32 +153,47 @@ a {
   display: block;
   position: absolute;
   top: -12px;
+  left: 3.5px;
+  width: 27px;
+  height: 40.5px;
   transform: scale(1.4) rotate(-10deg) translateY(100%);
   transform-origin: bottom center;
   transition: transform 0.3s ease;
 }
 .grabber__face {
   position: absolute;
-  width: 75px;
-  height: 84px;
-  right: 5%;
+  width: 90px;
+  height: 101px;
+  right: -8%;
   transition: transform 0.3s ease;
 }
-.grabber__body {
+.grabber__face > img,
+.grabber__features {
   position: absolute;
-  top: 50%;
-  left: 0%;
-  width: 110px;
-  height: 95px;
-  border-radius: 50%;
-  background: #7D9A9E;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+.grabber__body {
+  /* Torso moves and tilts with the head: same translate, rotation around the face centre */
+  position: absolute;
+  top: 82px;
+  left: -12px;
+  width: 150px;
+  height: 120px;
+  background: url("../images/grabber/body.svg") center / 100% 100% no-repeat;
+  transform-origin: 75px -31.5px;
+  transform: translateY(60.6px);
   transition: transform 0.3s ease;
 }
 .grabber--waiting .grabber__hand {
   transform: scale(1.4) rotate(-10deg);
 }
 .grabber--waiting .grabber__arm {
-  transform: translateY(80%);
+  transform: translateY(130%);
 }
 .grabber--waiting .grabber__face {
   transform: translateY(60%);
@@ -190,16 +205,19 @@ a {
   transform: translateY(70%);
 }
 .grabber--stalking .grabber__face {
-  transform: translateY(10%);
+  transform: translateY(3%);
+}
+.grabber--stalking .grabber__body {
+  transform: translateY(3.03px);
 }
 .grabber--grabbing .grabber__face {
-  transform: translateY(-40%) rotate(10deg);
+  transform: translateY(-42%) rotate(10deg);
 }
 .grabber--grabbing .grabber__arm {
   transform: translateY(0%);
 }
 .grabber--grabbing .grabber__body {
-  transform: translateY(-20%);
+  transform: translateY(-42.42px) rotate(10deg);
 }
 .grabber--grabbing .grabber__hand {
   transform: scale(1.7) rotate(10deg);
@@ -215,7 +233,7 @@ a {
   transition: transform 1s ease;
 }
 .grabber--grabbed .grabber__body {
-  transform: translateY(50%);
+  transform: translateY(70.7px);
   transition: transform 1s ease;
 }
 .grabber--extended .grabber__arm {
@@ -225,10 +243,10 @@ a {
   transform: translateY(-60%) rotate(15deg);
 }
 .grabber--extended .grabber__body {
-  transform: translateY(-40%);
+  transform: translateY(-60.6px) rotate(15deg);
 }
 .grabber--shaka .grabber__arm {
-  transform: translateY(50%);
+  transform: translateY(40%);
 }
 .grabber--shaka .grabber__hand {
   transform: scale(2.5) translateY(10%);
@@ -237,11 +255,11 @@ a {
   transform-origin: 55% 60%;
 }
 .grabber--shaka .grabber__face {
-  transform: translateY(70%);
+  transform: translateX(22%) translateY(-18%);
   transition: transform 1s ease;
 }
 .grabber--shaka .grabber__body {
-  transform: translateY(50%);
+  transform: translateX(19.8px) translateY(-18.18px);
   transition: transform 1s ease;
 }
 
